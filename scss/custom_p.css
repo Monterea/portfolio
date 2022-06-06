@@ -1,0 +1,278 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  background-color: white; }
+
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d216d; }
+
+h3 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d216d; }
+
+/*=========================================HOME =============================================*/
+#home {
+  background: url(../images/pozadi3.jpg) center/cover no-repeat;
+  min-height: 800px; }
+  #home #uvod {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+
+h1 {
+  align-content: center;
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+  text-align: center;
+  font-size: 4rem; }
+
+ /* label{
+      font-size: 16px;
+      padding: 0px; 
+      color: white;
+  }
+*/
+/*========================================= NAVBAR =============================================*/
+#person {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.navbar {
+  background-image: linear-gradient(to right, white, #2d216d); }
+
+.navbar-brand {
+  color: #2d216d;
+  font-size: 20px;
+  font-weight: bold; }
+
+.navbar-toggler-icon {
+  color: white; }
+
+.navbar-toggler {
+  color: white; }
+
+.navbar a {
+  color: white; }
+
+/*=========================================SKILLS=============================================*/
+/*.tecnology{
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex:1 0;
+  width: 100%;
+  height: 90px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.tech{
+  flex: 0 0 auto;
+  padding: 0 0.8rem;
+  margin-top: 2rem;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  list-style: none;
+}*/
+#skills {
+  width: 100%; }
+
+.prog-j {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between; }
+
+.boxik {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.pr {
+  margin: 0 auto; }
+
+/*========================================= ABOUT =============================================*/
+#about {
+  width: 100%;
+  background: url(../images/pozadi-tmave.jpg) center/cover no-repeat;
+  display: flex;
+  height: 800px; }
+
+.container-about {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 85%;
+  justify-content: center;
+  margin: 0 auto;
+  color: white; }
+
+.container-about h2 {
+  color: white; }
+
+.seznam {
+  text-align: left;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  font-weight: bold; }
+
+.psaci {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold; }
+
+/*========================================= PROJECTS =============================================*/
+#projects {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center; }
+  #projects .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto; }
+
+.project-text {
+  justify-content: center;
+  width: 600px; }
+
+.radek {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.carousel-text {
+  font-size: 1rem; }
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  margin: 0 auto; }
+
+.carousel-item {
+  height: 600px;
+  width: 600px;
+  background-color: #2d216d;
+  /* justify-content: center;
+   align-content: center;*/
+  margin: 0 auto;
+  padding: auto; }
+
+.carousel-item img {
+  /* justify-content: center;*/
+  margin: 0 auto;
+  text-align: center; }
+
+.darker {
+  background-color: rgba(17, 12, 42, 0.7);
+  padding: 5px; }
+
+.carousel-caption {
+  background-color: rgba(17, 12, 42, 0.7); }
+
+/*========================================= navic =============================================*/
+#navic {
+  width: 100%;
+  background: url(../images/pozadi-tmave.jpg) center/cover no-repeat;
+  display: flex;
+  min-height: 800px;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center; }
+
+#navic h3 {
+  color: white; }
+
+#navic .container .carousel h2 {
+  color: white; }
+
+#navic .container {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  color: white; }
+
+#navic .project-text {
+  justify-content: center;
+  width: 600px; }
+
+#navic .radek {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; }
+
+#navic .carousel-text {
+  font-size: 1rem;
+  color: white; }
+
+#navic .carousel-inner {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  margin: 0 auto; }
+
+#navic .carousel-item {
+  height: 600px;
+  width: 600px;
+  background-color: white;
+  /* justify-content: center;
+   align-content: center;*/
+  margin: 0 auto;
+  padding: auto; }
+
+#navic .carousel-item img {
+  /* justify-content: center;*/
+  margin: 0 auto;
+  text-align: center; }
+
+#navic .darker {
+  background-color: white;
+  padding: 5px; }
+
+#navic .carousel-caption {
+  background-color: rgba(17, 12, 42, 0.7); }
+
+/*========================================= CONTACTS =============================================*/
+.contact-bg {
+  width: 500px;
+  margin: 20px;
+  border: 2px #2d216d;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(17, 12, 42, 0.7);
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 2rem; }
+
+/*=========================================media=============================================*/
+@media screen and (max-width: 1039px) {
+  h1 {
+    font-size: 3rem; } }
+
+/*# sourceMappingURL=custom_p.css.map */
