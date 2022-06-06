@@ -30,7 +30,8 @@ h1 {
   font-family: 'Alfa Slab One', cursive;
   color: white;
   text-align: center;
-  font-size: 4rem; }
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px #898908; }
 
  /* label{
       font-size: 16px;

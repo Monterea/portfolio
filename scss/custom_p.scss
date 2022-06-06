@@ -16,34 +16,30 @@ body {
     font-weight: bold;
     color: #2d216d;
   }
+
+
  /*=========================================HOME =============================================*/  
   #home {
     background: url(../images/pozadi3.jpg) center/cover no-repeat;
     min-height: 800px;
-    
-#uvod{
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
- } 
+
 h1 {
-  align-content: center;
   font-family: 'Alfa Slab One', cursive;
   color: white;
   text-align: center;
   font-size: 4rem;
-  text-shadow: 2px 2px 5px rgb(137, 137, 8);
+  text-shadow: 2px 2px 10px rgb(137, 137, 8);
+  padding: 15px;
   }  
-    
- /* label{
-      font-size: 16px;
-      padding: 0px; 
-      color: white;
-  }
-*/
-  
+  #ja{
+height: 800px;
+  }  
+ 
   
 
    /*========================================= NAVBAR =============================================*/
@@ -96,29 +92,47 @@ ul {
 }*/
 #skills{
   width: 100%;
+display: flex;
+align-content: center;
+justify-content: center;
 }
-.prog-j{
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-}
-.boxik{
+.obal{
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.nadpis{
+  justify-self: center;
   margin: 0 auto;
+}
+.prog-j{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ /* align-content: center;*/
+  align-items: start;
+  margin:  0 auto;
+}
+.boxik{
+  justify-items: center;
+  flex-wrap: wrap;
+  margin:  0 auto;
 }
 .pr{
   margin: 0 auto;
 }
-
+.pr img {
+  width:100px;
+}
    /*========================================= ABOUT =============================================*/
    #about {
   width: 100%;
   background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
   display: flex;
-  height: 800px;
+  min-height: 800px;
 }
 
 .container-about{
@@ -304,6 +318,9 @@ color:white;
 
  /*=========================================media=============================================*/ 
  @media screen and (max-width: 1039px) {
+   #ja{
+     height: 600px;
+   }
   h1{
     font-size: 3rem;
   }
