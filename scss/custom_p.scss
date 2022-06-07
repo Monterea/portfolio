@@ -7,16 +7,22 @@ body {
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
     font-weight: bold;
-    color: #2d216d;
+    color: #15104a;
+    text-align: center;
     
   }
   h3{
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;
     font-weight: bold;
-    color: #2d216d;
+    color: #15104a;
   }
-
+  h4{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #15104a;
+  }
 
  /*=========================================HOME =============================================*/  
   #home {
@@ -33,7 +39,7 @@ h1 {
   color: white;
   text-align: center;
   font-size: 4rem;
-  text-shadow: 2px 2px 10px rgb(137, 137, 8);
+  text-shadow: 5px 5px 10px #f5a100;
   padding: 15px;
   }  
   #ja{
@@ -47,12 +53,13 @@ height: 800px;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     font-weight: bold;
+    text-shadow: 5px 5px 10px #f5a100;
    }
    .navbar {
-    background-image: linear-gradient(to right, white , #2d216d);}
+    background-image: linear-gradient(to right, white , #15104a);}
   
   .navbar-brand {
-    color: #2d216d;
+    color: #15104a;
     font-size: 20px;
     font-weight: bold; }
   
@@ -93,35 +100,48 @@ ul {
 #skills{
   width: 100%;
 display: flex;
-align-content: center;
-justify-content: center;
 }
 .obal{
   padding: 20px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: center;
+ // flex-direction: row;
+ flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+ margin: 0 auto;
+ //  margin: auto 0;
 }
 .nadpis{
+  padding: 20px;
+  width: 100%;
+  flex-direction: row;
   justify-self: center;
-  margin: 0 auto;
+  text-align: center;
+//  margin: 0 auto;
 }
 .prog-j{
+  padding: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- /* align-content: center;*/
-  align-items: start;
-  margin:  0 auto;
+ flex-direction: row;
+ justify-content:space-between;
+//align-items: flex-start;
+// margin: 0 auto;  
+// margin:auto 0;
 }
 .boxik{
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  margin:  0 auto;
+margin: 0 auto;
+margin:auto 0;
 }
 .pr{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0 auto;
 }
 .pr img {
@@ -130,22 +150,27 @@ justify-content: center;
    /*========================================= ABOUT =============================================*/
    #about {
   width: 100%;
-  background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
+  
   display: flex;
-  min-height: 800px;
+  justify-content: center;
 }
 
-.container-about{
-    padding-left: 30px;
-  padding-right: 30px;
-  width: 85%;
+.container-pozadi{
+  background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
+    padding: 30px;
   justify-content: center;
-  margin: 0 auto;
   color: white;
     
 }
-.container-about h2{
+.container-pozadi h2{
+  padding: 15px;
+  padding-top: 20px;
 color: white;
+text-shadow: 5px 5px 10px #f5a100;
+  }
+  .container-pozadi h3{
+    color: white;
+    text-align: center;
   }
 
 .seznam{
@@ -160,64 +185,58 @@ color: white;
   text-align: center;
   font-weight: bold;
 }
+/*========================================= HOBBIES =============================================*/
+#hobbies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+
    /*========================================= PROJECTS =============================================*/
 #projects{
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
   justify-items: center;
-  
+}
+.kolotoce{
+  display: flex;
+ // width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center;
+}
+.pravy-carusel{
+ // width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.levy-carusel{
+width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.carusel-text{
+  width: 100%;
+  padding: 15px;
+background-color: lightblue;
 
-.container{
-  padding-left: 30px;
-padding-right: 30px;
-width: 90%;
-justify-content: center;
-margin: 0 auto;
- } 
 }
-.project-text{
-  justify-content: center;
-  width: 600px;
-}
-.radek{
-  display: flex;
-  width: 80%;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.carousel-text{
-  font-size: 1rem;
-}
-.carousel-inner{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  margin: 0 auto;
-}
-.carousel-item{
-  height: 600px;
-  width: 600px;
-  background-color:#2d216d;
- /* justify-content: center;
-  align-content: center;*/
-  margin: 0 auto;
-  padding: auto;
-}
-.carousel-item img {
- /* justify-content: center;*/
-  margin: 0 auto;
-  text-align: center;
-}
-.darker {
-  background-color: rgba(17, 12, 42, 0.7);
-  padding: 5px;
-}
-.carousel-caption{
-  background-color: rgba(17, 12, 42, 0.7);
+
+
+.kolotoc{
+  width: 100%;
+  padding: 15px;
+ background-color: #15104a;
+
 }
  /*========================================= navic =============================================*/
 #navic{
@@ -284,27 +303,37 @@ color:white;
     padding: 5px;
   }
   #navic .carousel-caption{
-    background-color: rgba(17, 12, 42, 0.7);
+    background-color: rgba(8, 8, 29, 0.7);
   }
 
 
 
  /*========================================= CONTACTS =============================================*/
-
+ #contact {
+  width: 100%;
+  background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
 .contact-bg {
     
     width: 500px;
     margin: 20px;
-    border: 2px #2d216d;
+    border: 2px #15104a;
     border-radius: 20px;
       padding: 10px;
-      background-color: rgba(17, 12, 42, 0.7);
+      background-color: rgba(8, 8, 29, 0.7);
       font-weight: bold;
         overflow: hidden;
       font-size: 2rem; 
     }
 
-
+  label {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 16px;
+      color: white;
+    }
 
 
 
