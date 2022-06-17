@@ -1,6 +1,6 @@
 body {
   font-family: 'Libre Baskerville', serif;
-    font-size: 18px;
+    font-size: 16px;
     background-color: white;
   }
   h2{
@@ -9,54 +9,85 @@ body {
     font-weight: bold;
     color: #15104a;
     text-align: center;
-    
   }
   h3{
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;
     font-weight: bold;
     color: #15104a;
+    text-justify: center;
   }
   h4{
     font-family: 'Alfa Slab One', cursive;
     font-size: 1.5rem;
     font-weight: bold;
     color: #15104a;
+    padding:10px;
+    text-justify: center;
   }
 
  /*=========================================HOME =============================================*/  
   #home {
     background: url(../images/pozadi3.jpg) center/cover no-repeat;
-    min-height: 800px;
+    height: 800px;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
-
+#home_jmeno{
+  display: flex;
+ padding: 15px; 
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
 h1 {
+ z-index: 1;
   font-family: 'Alfa Slab One', cursive;
   color: white;
   text-align: center;
   font-size: 4rem;
   text-shadow: 5px 5px 10px #f5a100;
-  padding: 15px;
+
   }  
   #ja{
-height: 800px;
+    padding-right: 15px; 
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
+
   }  
- 
-  
+ #ja img{
+  max-height: 800px;
+width: auto;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
+z-index: 0;
+ }
+  #bublina {
+    position: absolute;
+    top: 100px;
+   right: 730px;
+    max-width: 400px;
+  }
 
    /*========================================= NAVBAR =============================================*/
    #person {
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     font-weight: bold;
+    color: white;
     text-shadow: 5px 5px 10px #f5a100;
    }
    .navbar {
-    background-image: linear-gradient(to right, white , #15104a);}
+    background: #15104a;}
   
   .navbar-brand {
     color: #15104a;
@@ -70,7 +101,12 @@ height: 800px;
     color: white; }
   
   .navbar a {
-    color: white; }
+    color: white;
+    font-weight: bold;
+     }
+    .nav-link{
+      
+    }
 /*=========================================SKILLS=============================================*/
 /*.tecnology{
   display: flex;
@@ -100,67 +136,111 @@ ul {
 #skills{
   width: 100%;
 display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .obal{
   padding: 20px;
   display: flex;
  // flex-direction: row;
  flex-direction: column;
-  justify-content: flex-start;
-  justify-content: center;
- margin: 0 auto;
+justify-content: center;
+  
+ //margin: 0 auto;
  //  margin: auto 0;
 }
 .nadpis{
-  padding: 20px;
+  padding: 35px;
+  width: 100%;
+  flex-direction: row;
+  justify-self: center;
+  text-align: center;
+
+}
+.nadpis_pozadi{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 35px;
   width: 100%;
   flex-direction: row;
   justify-self: center;
   text-align: center;
 //  margin: 0 auto;
+  background: url(../images/retro.png) center no-repeat;
 }
 .prog-j{
-  padding: 20px;
   width: 100%;
   display: flex;
  flex-direction: row;
  justify-content:space-between;
-//align-items: flex-start;
-// margin: 0 auto;  
-// margin:auto 0;
+// align-content: flex-start;
+//margin: 0 auto;  
+//margin:auto 0;
 }
 .boxik{
+  width: auto;
   display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-items: center;
   flex-wrap: wrap;
-margin: 0 auto;
-margin:auto 0;
+  flex-direction: column;
+ justify-content:flex-start;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+//margin: 0 auto;
+//margin:auto 0;
+}
+.programy {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+ justify-content:flex-start;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 .pr{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 120px;
+  min-height: 120px;
+  padding: 15px;
+  border:#15104a solid 1px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(27, 27, 94, 0.7);
 }
+
 .pr img {
-  width:100px;
+  width:90%;
+ padding-top: 0px; 
+ padding-bottom: 0px;
 }
+
+
+
+
+
    /*========================================= ABOUT =============================================*/
    #about {
   width: 100%;
-  
   display: flex;
   justify-content: center;
 }
 
 .container-pozadi{
   background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
-    padding: 30px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   color: white;
-    
+  width: 100%;
+  height: 100%;
 }
 .container-pozadi h2{
   padding: 15px;
@@ -187,6 +267,7 @@ text-shadow: 5px 5px 10px #f5a100;
 }
 /*========================================= HOBBIES =============================================*/
 #hobbies{
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,42 +283,166 @@ text-shadow: 5px 5px 10px #f5a100;
   flex-direction: column;
   justify-items: center;
 }
+.card{
+  border-color: #15104a;
+  border-width: 2px;
+}
+.card p{
+  font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+}
+.card-text{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  color: black;
+}
+.card footer{
+  background-color: lightblue;
+  border-color: #15104a;
+  border-width: 2px;
+}
+
+h5 {
+  font-weight: bold;
+  font-family: 'Alfa Slab One', cursive;
+  color: #15104a;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+ /*========================================= MORE =============================================*/
+#more{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center;
+}
+
 .kolotoce{
   display: flex;
- // width: 100%;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
   justify-items: center;
 }
 .pravy-carusel{
- // width: 100%;
-  padding: 15px;
+ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
 }
 .levy-carusel{
 width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
 }
 .carusel-text{
   width: 100%;
-  padding: 15px;
-background-color: lightblue;
-
+  padding: 30px;
+  background: url(../images/wall.jpg) center/cover no-repeat ;
+  display: flex;
+ flex-direction: column;
+ align-content: center;
 }
-
 
 .kolotoc{
-  width: 100%;
-  padding: 15px;
+  padding: 30px;
  background-color: #15104a;
-
+ width: 100%;
+  flex-direction: row;
+ justify-content: center;
 }
+.carouselBody {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  display: grid;
+  /* šířka je nastavená na 100% čehokoliv, kam tento carousel vložíš, omezeno pouze maximální šířkou 440px*/
+  /* Velikost lze měnit, ale pozor, je třeba přepočítat i aspect ratio a další hodnoty podle vzorce níže:*/
+  /* 1. carousel ma padding a gap 20px */
+  /* 2. obrazek zabira 100% carouselu a ma aspect ratio 1/1 */
+  /* 3. spodni bunka gridu ma velikost zavisejici na velikosti pisma, ktere pouzijete */
+  /* 4. tlacitka prev a next maji absolutni pozici, v zavislosti na velikosti a druhu pisma ve spodni bunce tabulky je treba upravit jejich pozicovani */
+  
+  aspect-ratio: 600/640;
+  background-color: #15104a;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    'foto'
+    'title';
+}
+.carousel {
+  grid-area: foto;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+.slide > img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* OBJECT FIT: mate na vyber primarne ze 2 moznosti */
+  /* 1. scale-down = obrazek se zmensi natolik, aby se vesel do divu cely se zachovanim pomeru stran*/
+  /* 2. cover = roztahne obrazek tak, aby vyplnil cely div a oriznou se presahujici casti obrazku */
+  object-fit: scale-down;
+  object-position: center;
+}
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+.carousel-button {
+   color: white;
+   background: transparent;
+   border: 1px solid white;
+   font-size: 20px;
+   z-index: 2;
+   position: absolute;
+   /* pozice tlacitka, kde 100% znamena, ze se daji na samotny okraj obrazky a nasledne prictete o kolik pixelu od obrazku se maji jeste dodatecne posunout */
+   top: calc(100% + 15px);
+}
+.carousel-button:hover,
+.carousel-button:focus {
+  background-color: rgba(0, 0, 0, .2);
+}
+.carousel-button.prev {
+  left: 0px;
+}
+.carousel-button.next {
+  right: 0px;
+}
+.carouselTitle {
+   grid-area: title;
+   justify-self: center;
+   align-self: flex-start;
+   color: white;
+   margin: 0;
+   padding: 0;
+}
+
+
+
+
+
  /*========================================= navic =============================================*/
 #navic{
 width: 100%;
@@ -310,15 +515,26 @@ color:white;
 
  /*========================================= CONTACTS =============================================*/
  #contact {
+  background: url(../images/pozadi3.jpg) center/cover no-repeat;
   width: 100%;
-  background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 15px;
+  align-content: center;
+  justify-items: center;
+  min-height: 800px;
+  position: relative;
+ 
+ /* background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;*/
 }
+
 .contact-bg {
-    
-    width: 500px;
+ align-self: center;
+    width: 800px;
     margin: 20px;
     border: 2px #15104a;
     border-radius: 20px;
@@ -346,17 +562,180 @@ color:white;
 
 
  /*=========================================media=============================================*/ 
- @media screen and (max-width: 1039px) {
-   #ja{
-     height: 600px;
+ @media screen and (max-width: 2000px) {
+  #bublina {
+   right: 500px;
+
+  }
+   }
+   @media screen and (max-width: 1600px) {
+    #bublina {
+     right: 450px;
+  
+    }
+     }
+
+
+ 
+ @media screen and (max-width: 1200px) {
+#home {
+  display: inline-block;
+}
+#ja{
+  display: block;
+  position: absolute;
+ top: 10px;
+  right: -70px;
+  z-index: 1;
+}
+#ja img{
+  z-index: 1;
+}
+#home_jmeno h1{
+  z-index: 2;
+}
+#home_jmeno{
+  display: block;
+  position: absolute;
+  top:490px;
+  left: 20px;
+  z-index: 2;
+}
+#bublina {
+  position: absolute;
+  top: 100px;
+ right: 400px;
+  max-width: 350px;
+}
+ }
+
+
+@media screen and (max-width: 955px) {
+ body {
+  font-size: 14px;
+ } 
+  
+  //   home:
+  #home {
+    height: 600px;
+  }
+  #home_jmeno{
+    top: 440px;
+  }
+  #ja{
+    top: -45px;
+    right: -110px;
+   }
+   #bublina {
+    max-width: 280px;
+   }
+   .nadpis {
+    padding-top: 15px;
+    padding-bottom: 5px;
    }
   h1{
     font-size: 3rem;
   }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 35px;
+    text-justify: center;
+  }
+  h4{
+    font-size: 28px;
+    padding: 0px;
+  }
+  // technologie:
+  .obal{
+    padding: 5px;
+  }
+  .boxik{
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .programy{
+    padding: 0px;
+  }
+  .prog-j{
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content:space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  //margin: 0 auto;  
+  //margin:auto 0;
+  }
+  .boxik{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   justify-content:flex-start;
+    align-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+  //margin: 0 auto;
+  //margin:auto 0;
+  }
+.programy {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   justify-content:flex-start;
+   align-items: center;
+  }
+.pr {
+  padding: 10px;
+}
+.contact-bg {
+     width: 85%;
+}
 }
 
 
+@media screen and (max-width: 784px) {
+.boxik{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+  .pr {
+    width: 110px;
+    margin: 5px;
+    flex-wrap: wrap;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 35px;
+  }
+  h3{
+    font-size: 28px;
+    text-justify: center;
+  }
+  h4{
+    font-size: 23px;
+    padding: 0px;
+  }
+}
 
-
-
-
+@media screen and (max-width: 550px) {
+  #bublina {
+    display:none;
+   }
+   #ja{
+    top: -45px;
+    left: 0px;
+   }
+   #person {
+    font-size: 1.5rem;
+   }
+   .contact-bg {
+    width: 95%;
+}
+}
