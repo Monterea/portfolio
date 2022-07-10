@@ -7840,7 +7840,7 @@ body {
 
 h2 {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 3rem;
+  font-size: 45px;
   font-weight: bold;
   color: #15104a;
   text-align: center;
@@ -7848,14 +7848,22 @@ h2 {
 
 h3 {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: bold;
   color: #15104a;
   text-justify: center; }
 
 h4 {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 1.5rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: #15104a;
+  padding: 10px;
+  text-justify: center; }
+
+h5 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 20px;
   font-weight: bold;
   color: #15104a;
   padding: 10px;
@@ -7910,6 +7918,49 @@ h1 {
   right: 730px;
   max-width: 400px; }
 
+/*========================================= UDAJE =============================================*/
+#udaje {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #15104a; }
+
+.udaje-obal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  padding-top: 20px; }
+
+.bile {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px; }
+
+.bile-nadpis {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 19px;
+  font-weight: bold; }
+
+#udaje a:active {
+  color: #f5a100;
+  font-size: 25px; }
+
+.sekce1 {
+  padding: 20px; }
+
+.sekce2 {
+  padding: 20px;
+  text-align: center; }
+
+.sekce3 {
+  padding: 20px;
+  text-align: end; }
+
 /*========================================= NAVBAR =============================================*/
 #person {
   font-family: 'Dancing Script', cursive;
@@ -7932,9 +7983,15 @@ h1 {
 .navbar-toggler {
   color: white; }
 
-.navbar a {
+.nav-link {
   color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 19px;
   font-weight: bold; }
+
+.nav-link a:active {
+  color: #f5a100;
+  font-size: 25px; }
 
 /*=========================================SKILLS=============================================*/
 /*.tecnology{
@@ -8162,7 +8219,7 @@ h5 {
   flex-direction: row;
   justify-content: space-between; }
 
-.carusel-text {
+.carusel-obsah {
   width: 100%;
   padding: 30px;
   background: url(../images/wall.jpg) center/cover no-repeat;
@@ -8172,6 +8229,7 @@ h5 {
 
 .kolotoc {
   padding: 30px;
+  padding-bottom: 55px;
   background-color: #15104a;
   width: 100%;
   flex-direction: row;
@@ -8190,8 +8248,8 @@ h5 {
   /* 4. tlacitka prev a next maji absolutni pozici, v zavislosti na velikosti a druhu pisma ve spodni bunce tabulky je treba upravit jejich pozicovani */
   aspect-ratio: 600/640;
   background-color: #15104a;
-  padding: 20px;
-  gap: 20px;
+  padding: 25px;
+  gap: 5px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 'foto' 'title'; }
@@ -8253,9 +8311,31 @@ h5 {
   grid-area: title;
   justify-self: center;
   align-self: flex-start;
+  text-align: center;
   color: white;
   margin: 0;
-  padding: 0; }
+  padding-top: 20px; }
+
+.carousel-text {
+  grid-area: popisek;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px; }
+
+.carousel-text1 {
+  grid-area: popisek;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold; }
 
 /*========================================= navic =============================================*/
 #navic {
@@ -8340,6 +8420,10 @@ h5 {
    flex-direction: column;
    justify-content: center;
    padding: 15px;*/ }
+
+#contact h3 {
+  color: #f5a100;
+  text-shadow: 5px 5px 10px white; }
 
 .contact-bg {
   align-self: center;
@@ -8518,7 +8602,24 @@ label {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  .udaje-obal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    padding-top: 10px; }
+
+  .sekce1 {
+    padding: 20px;
+    text-align: center; }
+
+  .sekce3 {
+    padding: 20px;
+    text-align: center; } }
 @media screen and (max-width: 550px) {
   #bublina {
     display: none; }
