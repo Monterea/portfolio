@@ -7843,7 +7843,8 @@ h2 {
   font-size: 3rem;
   font-weight: bold;
   color: #15104a;
-  text-align: center; }
+  text-align: center;
+  padding: 3px; }
 
 h3 {
   font-family: 'Alfa Slab One', cursive;
@@ -7978,7 +7979,30 @@ ul {
   width: 100%;
   flex-direction: row;
   justify-self: center;
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
+
+.nadpis_pozadi {
+  width: 100%;
+  aspect-ratio: 2000 / 100;
+  background-image: url(../images/retro.png);
+  background-size: cover;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.pozadi {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 35px;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  background: url(../images/retro.png) center no-repeat; }
 
 .prog-j {
   width: 100%;
@@ -8034,13 +8058,15 @@ ul {
 
 .container-pozadi {
   background: url(../images/pozadi-tmave.jpg) center/cover no-repeat;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   color: white;
-  width: 100%;
-  padding: 20px; }
+  width: 100%; }
 
 .container-pozadi h2 {
-  padding: 15px;
+  padding-bottom: 0px;
   padding-top: 20px;
   color: white;
   text-shadow: 5px 5px 10px #f5a100; }
@@ -8060,6 +8086,12 @@ ul {
   font-size: 25px;
   text-align: center;
   font-weight: bold; }
+
+.container-about {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /*========================================= HOBBIES =============================================*/
 #hobbies {
@@ -8294,20 +8326,28 @@ h5 {
 
 /*========================================= CONTACTS =============================================*/
 #contact {
-  width: 100%;
   background: url(../images/pozadi-tmave.jpg) center/cover no-repeat;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 15px; }
+  align-content: center;
+  justify-items: center;
+  min-height: 750px;
+  position: relative;
+  /* background: url(../images/pozadi-tmave.jpg) center/cover no-repeat ;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 15px;*/ }
 
 .contact-bg {
-  max-width: 500px;
+  align-self: center;
+  width: 900px;
   margin: 20px;
   border: 2px #15104a;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
   background-color: rgba(8, 8, 29, 0.7);
   font-weight: bold;
   overflow: hidden;
@@ -8325,6 +8365,11 @@ label {
 @media screen and (max-width: 1600px) {
   #bublina {
     right: 450px; } }
+@media screen and (max-width: 1400px) {
+  .pozadi {
+    height: 70px;
+    padding-top: 15px;
+    width: 100%; } }
 @media screen and (max-width: 1200px) {
   #home {
     display: inline-block; }
@@ -8354,6 +8399,10 @@ label {
     top: 100px;
     right: 400px;
     max-width: 350px; } }
+@media screen and (max-width: 1100px) {
+  .pozadi {
+    height: auto;
+    justify-content: center; } }
 @media screen and (max-width: 955px) {
   body {
     font-size: 14px; }
@@ -8373,7 +8422,8 @@ label {
 
   .nadpis {
     padding-top: 15px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    height: 120px; }
 
   h1 {
     font-size: 3rem; }
@@ -8427,8 +8477,14 @@ label {
     align-items: center; }
 
   .pr {
-    padding: 10px; } }
+    padding: 10px; }
+
+  .contact-bg {
+    width: 85%; } }
 @media screen and (max-width: 784px) {
+  .pozadi {
+    height: 100px; }
+
   .boxik {
     padding-top: 10px;
     padding-bottom: 5px; }
@@ -8450,7 +8506,19 @@ label {
 
   h4 {
     font-size: 23px;
-    padding: 0px; } }
+    padding: 0px; }
+
+  .pravy-carusel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+  .levy-carusel {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between; } }
 @media screen and (max-width: 550px) {
   #bublina {
     display: none; }
@@ -8460,6 +8528,12 @@ label {
     left: 0px; }
 
   #person {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  .pozadi {
+    height: 140px; }
+
+  .contact-bg {
+    width: 95%; } }
 
 /*# sourceMappingURL=main_p.css.map */
