@@ -7887,37 +7887,115 @@ h5 {
   align-content: center; }
 
 h1 {
-  z-index: 1;
+  z-index: 2;
   font-family: 'Alfa Slab One', cursive;
   color: white;
   text-align: center;
   font-size: 4rem;
   text-shadow: 5px 5px 10px #f5a100; }
 
-#ja {
-  padding-right: 15px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  justify-items: center; }
+ /*  #ja{
+    padding-right: 15px; 
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
 
-#ja img {
+  }  
+  #ja img{
   max-height: 800px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  justify-items: center;
-  z-index: 0; }
-
+width: auto;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
+z-index: 0;
+ } */
 #bublina {
   position: absolute;
   top: 100px;
   right: 730px;
   max-width: 400px; }
 
+/*========================================= RÁMEČEK =============================================*/
+#ja {
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 600px;
+  height: 800px; }
+
+  /*
+ #ja img{
+   background-color: blue;
+
+ }*/
+.picture-elipsa {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.picture-ram {
+  width: 300px;
+  height: 560px;
+  left: 62%;
+  top: 49%;
+  z-index: 1;
+  border: solid;
+  border-width: 5px;
+  margin: auto;
+  border-radius: 50%;
+  animation: rotace 28s linear infinite; }
+
+.nothing {
+  position: relative;
+  height: 650px;
+  width: 287px;
+  left: 50%;
+  top: 51%; }
+
+.picture {
+  position: absolute;
+  height: 560px;
+  width: 287px;
+  right: 167px;
+  top: 178px;
+  z-index: 0; }
+
+@keyframes rotace {
+  0% {
+    transform: scale(1);
+    border-color: rgba(255, 255, 255, 0.529);
+    border-width: 5px; }
+  15% {
+    transform: scale(1);
+    border-color: white;
+    border-width: 8px; }
+  30% {
+    transform: scale(1);
+    border-color: rgba(255, 255, 255, 0.768);
+    border-width: 15px; }
+  50% {
+    transform: scale(1.2);
+    border-color: rgba(255, 255, 255, 0.544);
+    border-width: 50px; }
+  75% {
+    transform: scale(1.4);
+    border-color: rgba(255, 255, 255, 0.421);
+    border-width: 75px; }
+  100% {
+    transform: scale(1.7);
+    border-color: rgba(255, 255, 255, 0.168);
+    border-width: 75px; } }
 /*========================================= UDAJE =============================================*/
 #udaje {
   width: 100%;
