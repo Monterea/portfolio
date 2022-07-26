@@ -7844,7 +7844,8 @@ h2 {
   font-weight: bold;
   color: #15104a;
   text-align: center;
-  padding: 3px; }
+  padding: 3px;
+  padding-bottom: 10px; }
 
 h3 {
   font-family: 'Alfa Slab One', cursive;
@@ -7880,43 +7881,36 @@ h5 {
 
 #home_jmeno {
   display: flex;
-  padding: 15px;
-  justify-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: flex-end;
   align-items: center;
   justify-items: center;
-  align-content: center; }
+  align-content: center;
+  max-width: 2000px; }
 
 h1 {
-  z-index: 2;
+  z-index: 4;
   font-family: 'Alfa Slab One', cursive;
   color: white;
   text-align: center;
   font-size: 4rem;
-  text-shadow: 5px 5px 10px #f5a100; }
+  text-shadow: 5px 5px 10px #f5a100;
+  padding-bottom: 80px; }
 
- /*  #ja{
-    padding-right: 15px; 
-display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
-justify-items: center;
+.text-home {
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 20px;
+  max-width: 900px;
+  text-align: center;
+  text-shadow: 2px 2px 10px #15104a, 0 0 10px #15104a, 0 0 5px #15104a;
+  padding-bottom: 80px; }
 
-  }  
-  #ja img{
-  max-height: 800px;
-width: auto;
-display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
-justify-items: center;
-z-index: 0;
- } */
 #bublina {
   position: absolute;
-  top: 100px;
-  right: 730px;
+  right: 50px;
+  padding-top: 30px;
   max-width: 400px; }
 
 /*========================================= RÁMEČEK =============================================*/
@@ -7927,75 +7921,90 @@ z-index: 0;
   align-content: center;
   align-items: center;
   justify-items: center;
-  width: 600px;
-  height: 800px; }
-
-  /*
- #ja img{
-   background-color: blue;
-
- }*/
-.picture-elipsa {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  justify-items: center; }
+  max-width: 300px; }
 
 .picture-ram {
-  width: 300px;
-  height: 560px;
-  left: 62%;
-  top: 49%;
+  position: absolute;
+  height: 540px;
+  width: 320px;
+  top: 170px;
+  right: 120px;
   z-index: 1;
   border: solid;
+  border-color: white;
+  border-width: 5px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.529), 0 0 5px white, 0 0 5px rgba(255, 255, 255, 0.768);
   border-width: 5px;
   margin: auto;
   border-radius: 50%;
-  animation: rotace 28s linear infinite; }
+  /* background-color: transparent; */
+  background-image: linear-gradient(to bottom right, transparent, #15104a); }
+
+.animated {
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+  transition-timing-function: linear;
+  transition-property: bacground, transform;
+  transition-duration: 6s;
+  /*   animation: rotace 28s linear infinite;    */ }
 
 .nothing {
-  position: relative;
-  height: 650px;
-  width: 287px;
-  left: 50%;
-  top: 51%; }
+  position: absolute;
+  height: 540px;
+  width: 330px;
+  right: 120px;
+  top: 170px; }
 
 .picture {
   position: absolute;
   height: 560px;
   width: 287px;
-  right: 167px;
-  top: 178px;
-  z-index: 0; }
+  right: 141px;
+  top: 147px;
+  z-index: 3; }
 
 @keyframes rotace {
   0% {
     transform: scale(1);
     border-color: rgba(255, 255, 255, 0.529);
-    border-width: 5px; }
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.264), 0 0 5px rgba(255, 255, 255, 0.421), 0 0 20px rgba(255, 255, 255, 0.264);
+    border-style: none; }
   15% {
     transform: scale(1);
-    border-color: white;
-    border-width: 8px; }
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.529);
+    border-width: 2px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.529), 0 0 5px white, 1 1 2px rgba(255, 255, 255, 0.529); }
   30% {
     transform: scale(1);
-    border-color: rgba(255, 255, 255, 0.768);
-    border-width: 15px; }
+    border: solid;
+    border-color: white;
+    border-width: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.529), 0 0 5px white, 0 0 5px rgba(255, 255, 255, 0.768); }
   50% {
-    transform: scale(1.2);
+    transform: scale(1);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.768);
+    border-width: 8px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.529), 0 0 5px 255, 255, 255, 0.768, 0 0 10px rgba(255, 255, 255, 0.544); }
+  65% {
+    transform: scale(1.1);
+    border: solid;
     border-color: rgba(255, 255, 255, 0.544);
-    border-width: 50px; }
-  75% {
-    transform: scale(1.4);
-    border-color: rgba(255, 255, 255, 0.421);
-    border-width: 75px; }
+    border-width: 11px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.421), 0 0 5px rgba(255, 255, 255, 0.544), 0 0 15px rgba(255, 255, 255, 0.421); }
+  80% {
+    transform: scale(1.1);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.544);
+    border-width: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.421), 0 0 5px rgba(255, 255, 255, 0.544), 0 0 15px rgba(255, 255, 255, 0.421); }
   100% {
-    transform: scale(1.7);
-    border-color: rgba(255, 255, 255, 0.168);
-    border-width: 75px; } }
+    transform: scale(1.2);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.421);
+    border-width: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.264), 0 0 5px rgba(255, 255, 255, 0.421), 0 0 20px rgba(255, 255, 255, 0.264); } }
 /*========================================= UDAJE =============================================*/
 #udaje {
   width: 100%;
@@ -8036,8 +8045,19 @@ z-index: 0;
   text-align: center; }
 
 .sekce3 {
-  padding: 20px;
-  text-align: end; }
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-self: center;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px; }
+
+.sekce3 a {
+  margin-left: 25px; }
+
+.sekce3 img {
+  height: 80px; }
 
 /*========================================= NAVBAR =============================================*/
 #person {
@@ -8118,26 +8138,24 @@ ul {
   padding: 15px; }
 
 .nadpis_pozadi {
-  width: 100%;
-  aspect-ratio: 2000 / 100;
-  background-image: url(../images/retro.png);
+  width: 90%;
   background-size: cover;
   align-content: center;
   background-position: center;
-  background-repeat: no-repeat; }
-
-.pozadi {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin: 0 auto;
-  padding: 35px;
+  background-repeat: no-repeat;
+  aspect-ratio: 1000 / 20;
+  /* background: url(../images/retro.png) center no-repeat;  */
+  background-image: url(../images/retro.png);
   flex-direction: column;
   align-self: center;
   align-content: center;
   align-items: center;
-  width: 80%;
-  height: 100px;
-  background: url(../images/retro.png) center no-repeat; }
+  height: 60px;
+  margin-bottom: 15px; }
+
+.pozadi {
+  padding-top: 5px;
+  padding-bottom: 2px; }
 
 .prog-j {
   width: 100%;
@@ -8213,12 +8231,12 @@ ul {
 .seznam {
   text-align: left;
   font-family: 'Dancing Script', cursive;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold; }
 
 .psaci {
   font-family: 'Dancing Script', cursive;
-  font-size: 25px;
+  font-size: 28px;
   text-align: center;
   font-weight: bold; }
 
@@ -8227,6 +8245,9 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+#about .psaci {
+  text-shadow: 2px 2px 10px #15104a, 0 0 10px #15104a, 0 0 5px #15104a; }
 
 /*========================================= HOBBIES =============================================*/
 #hobbies {
@@ -8532,7 +8553,7 @@ label {
     height: 70px;
     padding-top: 15px;
     width: 100%; } }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   #home {
     display: inline-block; }
 
@@ -8540,47 +8561,94 @@ label {
     display: block;
     position: absolute;
     top: 10px;
-    right: -70px;
-    z-index: 1; }
+    right: -70px; }
 
-  #ja img {
-    z-index: 1; }
+  .text-home {
+    justify-self: flex-start;
+    padding-left: 30px;
+    max-width: 800px; }
 
-  #home_jmeno h1 {
-    z-index: 2; }
+  .picture {
+    top: 155px;
+    right: 71px; }
 
   #home_jmeno {
     display: block;
     position: absolute;
     top: 490px;
     left: 20px;
-    z-index: 2; }
+    z-index: 4; }
 
   #bublina {
     position: absolute;
     top: 100px;
     right: 400px;
-    max-width: 350px; } }
+    max-width: 350px;
+    padding-top: 0px; }
+
+  .pozadi {
+    height: 60px;
+    padding-top: 5px;
+    width: 100%;
+    aspect-ratio: 800 / 10;
+    padding-bottom: 10px; } }
 @media screen and (max-width: 1100px) {
   .pozadi {
-    height: auto;
-    justify-content: center; } }
+    height: 60px;
+    padding-top: 5px;
+    width: 100%;
+    aspect-ratio: 300 / 3; }
+
+  .text-home {
+    max-width: 600px; }
+
+  #bublina {
+    max-width: 300px; }
+
+  h2 {
+    font-size: 40px; }
+
+  h3 {
+    font-size: 35px;
+    text-justify: center; }
+
+  h4 {
+    font-size: 28px;
+    padding: 0px; } }
 @media screen and (max-width: 955px) {
   body {
     font-size: 14px; }
 
-  #home {
-    height: 600px; }
+  .sekce3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px; }
+
+  .sekce3 img {
+    height: 60px; }
 
   #home_jmeno {
-    top: 440px; }
+    top: 510px;
+    padding-left: 20px; }
+
+  .text-home {
+    max-width: auto;
+    font-size: 16px;
+    padding-right: 5px; }
 
   #ja {
     top: -45px;
     right: -110px; }
 
   #bublina {
-    max-width: 280px; }
+    max-width: 250px;
+    right: 300px; }
+
+  .picture {
+    top: 102px;
+    right: 28px; }
 
   .nadpis {
     padding-top: 15px;
@@ -8644,6 +8712,15 @@ label {
   .contact-bg {
     width: 85%; } }
 @media screen and (max-width: 784px) {
+  .text-home {
+    padding-top: 75px;
+    padding-right: 10px;
+    width: 90%;
+    align-self: center; }
+
+  #home_jmeno {
+    padding-left: 10px; }
+
   .pozadi {
     height: 100px; }
 
@@ -8696,8 +8773,13 @@ label {
     text-align: center; }
 
   .sekce3 {
-    padding: 20px;
-    text-align: center; } }
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px; } }
 @media screen and (max-width: 550px) {
   #bublina {
     display: none; }
@@ -8705,6 +8787,23 @@ label {
   #ja {
     top: -45px;
     left: 0px; }
+
+  .picture-ram {
+    top: 170px;
+    left: 10px; }
+
+  .picture {
+    top: 102px;
+    left: 21px; }
+
+  #home_jmeno {
+    top: 400px;
+    padding-left: 5px; }
+
+  .text-home {
+    padding-top: 15px;
+    padding-right: 10px;
+    width: 90%; }
 
   #person {
     font-size: 1.5rem; }
