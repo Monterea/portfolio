@@ -48,7 +48,7 @@ h1 {
  /*=========================================HOME =============================================*/  
   #home {
     background: url(../images/pozadi3.jpg) center/cover no-repeat;
-    height: 760px;
+    height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -192,7 +192,7 @@ justify-content: center;
 align-content: center;
 background-color: #15104a;
 padding: 10px;
-
+padding-top: 20px;
 }
 .udaje-obal {
   width: 100%;
@@ -200,7 +200,7 @@ padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  
+  padding-top: 20px;
 }
 .bile {
   color: white;
@@ -340,7 +340,7 @@ aspect-ratio: 1000 / 20;
   align-self: center;
   align-content: center;
 align-items: center;
-height: 60px;
+/* height: 60px; */
 margin-bottom: 15px;
 }
 .pozadi {
@@ -1114,7 +1114,7 @@ h1{
 }
 #home_jmeno{ 
   width: 100%;
-padding-top: 200px;
+padding-top: 230px;
 }
 
 
@@ -1146,5 +1146,38 @@ padding-top: 200px;
 }
 .sekce3 img {
   height: 40px;
+}
+p {
+  font-size: 13px;
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 22px;
+  text-justify: center;
+}
+h4{
+  font-size: 19px;
+  padding: 0px;
+}
+h5 {
+  font-weight: bolder;
+  font-family: 'Alfa Slab One', cursive;
+  color: #15104a;
+  text-align: center;
+  font-size: 19px;
+}
+.carousel-text {
+  padding-top: 5px;
+  font-size: 10px;
+}
+.carousel-text1 {
+  padding-top: 10px;
+  font-size: 10px;
+
+}
+.card-text{
+  font-size: 13px;
 }
 }
